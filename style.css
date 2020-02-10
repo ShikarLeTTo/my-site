@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   position: relative;
   margin: 0;
@@ -284,19 +288,106 @@ body {
 }
 
 .project {
+  position: relative;;
   margin: 0 10px;
 }
 
 .project-image {
+  position: relative;
+  width: 448px;
+  height: 256px;
   top: 0;
   left: 0;
   margin: 0;
+  border: 5px outset #b69e4b;
+  overflow: hidden;
+}
+
+.text-cont {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.text-cont:before, .text-cont:after {
+  content: '';
+  width: 256px;
+  height: 256px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #1b70d5;
+  opacity: .1;
+  transition: 1s;
+}
+
+.project-image:hover {
+  border: 5px inset #b7bab7;
+}
+
+.project-image:hover .text-cont::before {
+  transform: translateX(92%) rotate(45deg) scale(2);
+  transition: .5s;
+  opacity: .6;
+}
+
+.project-image:hover .text-cont::after {
+  transform: translateX(-17%) rotate(45deg) scale(2);
+  transition: .5s;
+  opacity: .6;
+}
+
+.text-cont:before {
+  transform: translateX(-125%) rotate(45deg);
+}
+
+.text-cont:after {
+  transform: translateX(195%) rotate(45deg);
+}
+
+.project-text {
+  position: absolute;
+  top: 10%;
+  color: #b69e4b;
+  text-align: center;
+  z-index: 10;
+}
+.project-text h3{
+  transform: scale(0);
+  transition: .5s;
+}
+
+.project-image:hover .project-text h3 {
+  transform: scale(1);
+}
+
+.project-image:hover .project-text p {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.project-image:hover a.button {
+  opacity: 1;
+  transition: .5s;
+}
+
+.project-text p {
+  transform: scale(2);
+  transition: .5s;
+  opacity: 0;
 }
 
 .project-image img {
-  width: 448px;
   height: 256px;
   object-fit: cover;
+  transition: .5s;
+}
+
+.project-image:hover img{
+  transform: rotate(-30deg) scale(2);
+  filter: blur(2px);
 }
 
 .projects p {
@@ -318,6 +409,8 @@ body {
   box-shadow: 0 4px 16px rgba(249, 221, 121, 0.4);
   border-radius: 24px;
   transition: background-color 100ms, box-shadow 100ms;
+  opacity: 0;
+  transition: .2s ease-in-out;
 }
 
 .button:focus,
