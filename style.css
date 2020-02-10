@@ -158,6 +158,15 @@ body {
   background-position-x: center;
 }
 
+.blog-project {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project {
+  text-align: center
+}
+
 .intro {
   padding-top: 160px;
   padding-bottom: 120px;
@@ -272,6 +281,10 @@ body {
   min-height: 256px;
   margin: 0 0 100px;
   padding-left: 528px;
+}
+
+.project {
+  margin: 0 10px;
 }
 
 .project-image {
