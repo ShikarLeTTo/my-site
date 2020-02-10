@@ -1,0 +1,6 @@
+bash:
+npm i
+
+gulp
+
+Папка dist, изменить путь css
