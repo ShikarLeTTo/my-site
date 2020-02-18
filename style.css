@@ -98,10 +98,10 @@ body {
   position: relative;
   padding-top: 200px;
   height: 600px;
-  background-image: url(space-transparent-png-2.png);
+  background-image: url("img/bg_space.png");
     
   background-repeat: no-repeat;
-  background-position-x: center;
+  background-position-x: 485px;
   background-position-y: 48px;
 }
 
