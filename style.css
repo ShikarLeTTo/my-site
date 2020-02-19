@@ -249,6 +249,11 @@ body {
   font-weight: 400;
 }
 
+.about h3 {
+  border-top: 3px solid #f9dd79;
+  border-right: 3px solid #f9dd79;
+}
+
 .intro p {
   margin: 0;
   z-index: 2;
