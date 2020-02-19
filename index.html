@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
@@ -29,13 +29,24 @@
       <div class="container">
         <h2 class="subheading">Let's get acquainted!</h2>
         <figure class="user-image">
-          <img src="files/ava.jpg" width="928" height="536" alt="Фотография Опознанного Енота">
+          <svg class="image_svg" width="500" height="720">
+            <linearGradient id="gradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="500" y2="720">
+              <stop offset="0" style="stop-color: #f9dd79;"/>
+              <stop offset="1" style="stop-color: #020202;"/>
+          </linearGradient>
+          <rect width="500" height="720" x="0" y="0" fill="url(#gradient)"></rect>
+          </svg>
+          <img src="files/ava.jpg" width="500" height="720" alt="User Photo">
         </figure>
         <div class="about">
           <h3>About me</h3>
-          <p>Текст с парой слов о себе.</p>
-          <h3>How can I help</h3>
-          <p>Текст о том, чем могу быть полезен.</p>
+          <p>Date of birth: April 29, 1990 (29)</p>
+          <p>City: Vladivostok, Russia</p>
+          <p>I am a beginner HTML-coder. I am a beginner HTML-coder.</p>
+          <p>Student of the Far Eastern Federal University, applied computer science - web design.</p>
+          <p>
+          <h3><u>How can I help</u></h3>
+          <p>I studied the main markup languages, began study: Javascript, PHP, Python. Layout according to the W3C standard, adaptive layout. Studied and practiced CMS Wordpress.</p>
         </div>
         <div class="content-download">
           <p><a href="files/download/CV_letunovda.docx" download="">CV download</a></p>
@@ -69,10 +80,10 @@
                   <a class="button" href="source/project/keks/index.html">Open page</a>
                 </div>
               </div>
-              <div class="text">
-                <h4>Cайт инструктора Кекса</h4>
-                <p></p>
-              </div>
+            </div>
+            <div class="text">
+              <h4>Cайт инструктора Кекса</h4>
+              <p></p>
             </div>
           </div>
           <div class="project">
