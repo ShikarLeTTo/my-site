@@ -190,7 +190,7 @@ body {
 
 .blog-project {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
@@ -339,7 +339,7 @@ body {
 
 .project {
   position: relative;;
-  margin: 0 60px 120px;
+  margin: 0 0 5px;
 }
 
 .project-image {
@@ -351,11 +351,6 @@ body {
   margin: 0;
   border: 5px outset #b69e4b;
   overflow: hidden;
-}
-
-.text {
-  display: block;
-  position: absolute;
 }
 
 .text-cont {
